@@ -1,0 +1,13 @@
+.home {
+  width: 100%;
+  text-align: center;
+
+  .home-header {
+    background-color: #E34F30;
+    height: 5rem;
+
+    .home-header--logo {
+      height: inherit;
+    }
+  }
+}
