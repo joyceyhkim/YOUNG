@@ -1,28 +1,32 @@
-import logo from '../assets/young_logo.png';
 import './app.css';
-import '@ionic/react/css/core.css';
-import {setupIonicReact} from "@ionic/react";
-import {IonHeader, IonToolbar, IonTitle, IonContent} from "@ionic/react";
-
-setupIonicReact();
+// @ts-ignore
+import {Link, Route, Routes} from "react-router-dom";
+import React from "react";
+import Shop from "./shop/shop.tsx";
+import Cart from "./cart/cart.tsx";
+import Logo from "./assets/logo/young_logo.png"
+import Home from "./home/home.tsx";
 
 const App = () => {
+    const value = {
+        appendTo: 'self'
+    };
+
     return (
-        <>
-            <IonHeader className="home-header">
-                <IonToolbar>
-                    <img src={logo} className="home-header--logo" alt="logo"/>
-                </IonToolbar>
-            </IonHeader>
-            <IonContent className="ion-padding">
-                <h1>Content</h1>
-            </IonContent>
-        </>
-        // <div className="home">
-        //     <header className="home-header">
-        //         <img src={logo} className="home-header--logo" alt="logo" />
-        //     </header>
-        // </div>
+        <div className="App">
+            <header className="header">
+                <nav>
+                    <Link to="/shop" className="tab">Shop</Link>
+                    <Link to="/"><img src={Logo} alt="YOUNG Florals Logo" className="logo"/></Link>
+                    <Link to="/cart" className="tab right"><i className="pi pi-shopping-cart"></i></Link>
+                </nav>
+            </header>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="shop" element={<Shop/>}/>
+                <Route path="cart" element={<Cart/>}/>
+            </Routes>
+        </div>
     );
 }
 

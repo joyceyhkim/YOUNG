@@ -1,13 +1,30 @@
-.home {
+.App {
   width: 100%;
-  text-align: center;
+  /*text-align: center;*/
 
-  .home-header {
+  .header {
+    /*display: flex;*/
     background-color: #E34F30;
     height: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    /*width: 100%;*/
 
-    .home-header--logo {
-      height: inherit;
+    nav {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: block;
+      height: 5rem;
+    }
+
+    .tab {
+      color: white;
+      text-decoration: none;
     }
   }
 }
