@@ -42,9 +42,9 @@ const Home: FC<homeProps> = () => (
         </div>
     </div>
      <div className="card-container">
-         <Row gutter={16}>
+         <Row gutter={[16, 16]}>
              {cardContent.map((item) => (
-                 <Col span={8}>
+                 <Col span={6}>
                      <Card
                          className="card-item"
                          cover={<img src={item.imgSrc} alt={item.description} className="card-img" />}
