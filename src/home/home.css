@@ -22,13 +22,19 @@ homewrapper {
         }
     }
 
-    .card-container {
-        padding: 7rem;
-        .card-item {
+    .content-body {
+        .carousel {
+            .card-item {
+                height: 15rem;
+                background: #364d79;
 
-        }
-        .card-img {
-            /*max-height: 50rem;*/
+                h3 {
+                    /*height: 160px;*/
+                    color: #fff;
+                    line-height: 160px;
+                    text-align: center;
+                }
+            }
         }
     }
 }

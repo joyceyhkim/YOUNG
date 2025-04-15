@@ -1,3 +1,5 @@
 .container {
-    position: relative;
+    .ant-row {
+        justify-content: center;
+    }
 }

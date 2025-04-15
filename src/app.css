@@ -1,3 +1,11 @@
+.primary-buttons {
+  background: #006400;
+}
+
+.primary-buttons:hover {
+  background: #002100 !important;
+}
+
 .App {
   width: 100%;
   /*text-align: center;*/
@@ -15,6 +23,15 @@
       height: 100%;
       align-items: center;
       justify-content: space-between;
+
+      .cart-icon {
+        cursor: pointer;
+
+        svg {
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+      }
     }
 
     .logo {
@@ -26,5 +43,11 @@
       color: white;
       text-decoration: none;
     }
+  }
+
+  .content-body {
+    margin-top: 1rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
   }
 }

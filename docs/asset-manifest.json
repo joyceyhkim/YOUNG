@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/YOUNG/static/css/main.dd7e92a0.css",
+    "main.js": "/YOUNG/static/js/main.92551aab.js",
+    "static/js/453.baf0933a.chunk.js": "/YOUNG/static/js/453.baf0933a.chunk.js",
+    "static/media/arches.JPG": "/YOUNG/static/media/arches.ddd49b6b05a75fd311b4.JPG",
+    "static/media/bouquet.JPG": "/YOUNG/static/media/bouquet.a0172b511361341f3208.JPG",
+    "static/media/vase_arrangement.JPG": "/YOUNG/static/media/vase_arrangement.6e2f69796c8a82504a11.JPG",
+    "static/media/candlelebra.JPG": "/YOUNG/static/media/candlelebra.a439b590e6809e01a405.JPG",
+    "static/media/large_vase.JPG": "/YOUNG/static/media/large_vase.4021b0a0b7e1d46519ae.JPG",
+    "static/media/table_arrangement.JPG": "/YOUNG/static/media/table_arrangement.a040b1a3e70d36cfa6dc.JPG",
+    "static/media/young_logo.png": "/YOUNG/static/media/young_logo.889f6fe6069373d99bc0.png",
+    "index.html": "/YOUNG/index.html",
+    "main.dd7e92a0.css.map": "/YOUNG/static/css/main.dd7e92a0.css.map",
+    "main.92551aab.js.map": "/YOUNG/static/js/main.92551aab.js.map",
+    "453.baf0933a.chunk.js.map": "/YOUNG/static/js/453.baf0933a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd7e92a0.css",
+    "static/js/main.92551aab.js"
+  ]
+}

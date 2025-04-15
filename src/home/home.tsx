@@ -1,38 +1,12 @@
-import React, { FC } from 'react';
+import React, {FC, useState} from 'react';
 import './home.css';
 import Banner from '../assets/gallery/arches.JPG';
-import Bouquet from '../assets/gallery/bouquet.JPG';
-import Candlelebra from '../assets/gallery/candlelebra.JPG';
-import LargeVase from '../assets/gallery/large_vase.JPG';
-import TableArrange from '../assets/gallery/table_arrangement.JPG';
-import VaseArrange from '../assets/gallery/vase_arrangement.JPG';
-import {Button, Card, Col, Row} from "antd";
+import {Card, Carousel, Col} from "antd";
 import Meta from "antd/lib/card/Meta";
+import galleryAssets from "../assets/gallery/gallery-export.ts";
+
 
 interface homeProps {}
-
-const cardContent = [
-    {
-        imgSrc: Bouquet,
-        description: 'Bouquet',
-    },
-    {
-        imgSrc: Candlelebra,
-        description: 'Candlelebra',
-    },
-    {
-        imgSrc: LargeVase,
-        description: 'Large Vase',
-    },
-    {
-        imgSrc: TableArrange,
-        description: 'Table Arrangement',
-    },
-    {
-        imgSrc: VaseArrange,
-        description: 'Vase Arrangement',
-    },
-];
 
 const Home: FC<homeProps> = () => (
  <homeWrapper>
@@ -41,20 +15,18 @@ const Home: FC<homeProps> = () => (
             <img src={Banner} alt="banner" />
         </div>
     </div>
-     <div className="card-container">
-         <Row gutter={[16, 16]}>
-             {cardContent.map((item) => (
-                 <Col span={6}>
-                     <Card
-                         className="card-item"
-                         cover={<img src={item.imgSrc} alt={item.description} className="card-img" />}
-                     >
-                         <Meta title={item.description} description={item.description} />
-                     </Card>
-                 </Col>
-             ))}
-         </Row>
-     </div>
+    <div className='content-body'>
+        <Carousel arrows dotPosition="right" autoplay={{ dotDuration: true }} autoplaySpeed={10000} speed={1500} className="carousel">
+            {galleryAssets.map((item) => (
+                <Card
+                    className='card-item'
+                    cover={<img src={item.imgSrc} alt={item.description} className="card-img" />}
+                >
+                    <Meta title={item.description} description={item.description} />
+                </Card>
+            ))}
+        </Carousel>
+    </div>
  </homeWrapper>
 );
 
